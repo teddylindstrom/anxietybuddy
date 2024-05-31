@@ -1,26 +1,37 @@
-/*overriding default styles made by the browser*/
-{    padding: 0;
+/*Asterisk wildcard selector to override default styles added by the browser*/
+* {   padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles*/
+    color:black
+}
+
 /* Header */
 header {
-    padding: 0;
+    padding: 10;
     background-color: rgb(19, 138, 53);
     box-sizing: border-box;
 }
 
 /* Main content*/
 main {
-    padding: 0;
+    padding: 20;
     background-color: rgb(253, 250, 249);
+    /*make main element take up any surplus space to push footer down*/
     box-sizing: border-box;
+    flex: 1 0 auto;
 }
 
 /*Footer content*/
 footer {
-    padding: 0;
+    padding: 10;
     background-color: rgb(19, 138, 53);
     box-sizing: border-box;
 }
