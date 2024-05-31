@@ -1,3 +1,10 @@
+/*Imported style Google Fonts*/
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
 /*Asterisk wildcard selector to override default styles added by the browser*/
 * {   padding: 0;
     margin: 0;
@@ -11,6 +18,7 @@ body {
     flex-direction: column;
     /* Generic project styles*/
     color:black
+    
 }
 
 /* Header */
