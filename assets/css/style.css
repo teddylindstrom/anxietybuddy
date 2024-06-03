@@ -41,10 +41,35 @@ h1 {
     color: #252525;
 }
 
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: 0;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color:rgb(243, 238, 237);
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+} 
+
 /* Main content*/
 main {
     padding: 20px;
-    background-color: rgb(253, 250, 249);
+    background-color: rgb(243, 238, 237);
     /*make main element take up any surplus space to push footer down*/
     box-sizing: border-box;
     flex: 1 0 auto;
