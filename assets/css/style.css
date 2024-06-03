@@ -1,7 +1,7 @@
-/*Imported style Google Fonts*/
-{font-family: "Roboto", sans-serif;
-font-weight: 100;
-font-style: normal;
+/*Imported style Google Fonts*/ 
+{   font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 /*Asterisk wildcard selector to override default styles added by the browser*/
@@ -37,6 +37,7 @@ header a{
     text-decoration: none;
     color: inherit;
 }
+
 h1 {
     font-family: 'Roboto' sans-serif;
     text-transform: uppercase;
@@ -96,7 +97,6 @@ main {
 footer {
     background-color: rgb(19, 138, 53);
 }
-
 
 /* media query: tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
