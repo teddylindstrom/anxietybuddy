@@ -84,11 +84,12 @@ nav {
 
 /* Main content*/
 main {
-    padding: 20px;
     background-color: rgb(243, 238, 237);
     /*make main element take up any surplus space to push footer down*/
     box-sizing: border-box;
     flex: 1 0 auto;
+    margin-top: 47px;
+
 }
 
 /*Footer content*/
