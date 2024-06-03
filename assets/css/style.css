@@ -46,7 +46,7 @@ h1 {
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
-    list-style-type: 0;
+    list-style-type: none;
 }
 
 #menu > li {
@@ -88,7 +88,6 @@ main {
     box-sizing: border-box;
     flex: 1 0 auto;
     margin-top: 47px;
-
 }
 
 /* Footer */
