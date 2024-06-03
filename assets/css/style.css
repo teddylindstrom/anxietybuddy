@@ -58,7 +58,7 @@ h1 {
 }
 
 /* Navbar styles with dropdown toggle */
-#nav {
+nav {
     position: absolute;
     background-color:rgb(243, 238, 237);
     width: 100%;
@@ -110,7 +110,7 @@ main {
 @media screen and (min-width: 768px) {
     /* Header */
     nav {
-        display: block
+        display: block;
         position: relative;
         box-shadow: none;
         width: fit-content;
