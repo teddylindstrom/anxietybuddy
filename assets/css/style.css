@@ -83,11 +83,18 @@ nav {
 
 /* Main content*/
 main {
-    background-color: rgb(243, 238, 237);
+    
     /*make main element take up any surplus space to push footer down*/
     box-sizing: border-box;
     flex: 1 0 auto;
     margin-top: 47px;
+}
+
+/* Hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/tree.jpg") no-repeat center center/cover;
 }
 
 /* Footer */
