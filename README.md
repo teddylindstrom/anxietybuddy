@@ -1,5 +1,9 @@
-Anxiety buddy
-I have been dealing with anxiety attacks and panic attacks most of my life. Many of my friends as experienced a panic- and/or anxiety attack at least once in their life. What happens then is that your minds imagination creates a scenario where you think you're in danger, but you're actually just get mental blocking, difficult breathing and paralysing motorskills. It can be difficult to calm yourself down from the attack, that's why I created this online informational assistant to help and guide you. Over the years I've gotten through anxiety attacks much better once I've had a person to talk to. So my idea is that Anxiety Buddy is a virtual assistant that can help you through anxiety attacks when you can't get hold of anyone to talk to.
+# Anxiety buddy
+I have been dealing with anxiety attacks and panic attacks most of my life. 
+Many of my friends as experienced a panic- and/or anxiety attack at least once in their life. 
+
+## What is an anxiety attack
+What happens then is that your minds imagination creates a scenario where you think you're in danger, but you're actually just get mental blocking, difficult breathing and paralysing motorskills. It can be difficult to calm yourself down from the attack, that's why I created this online informational assistant to help and guide you. Over the years I've gotten through anxiety attacks much better once I've had a person to talk to. So my idea is that Anxiety Buddy is a virtual assistant that can help you through anxiety attacks when you can't get hold of anyone to talk to.
 
 Anxiety buddy is a online informational tool that's meant to calm you down by giving you the helpful information, online, when you're having an anxiety attack.
 
