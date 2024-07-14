@@ -90,11 +90,11 @@ main {
     margin-top: 47px;
 }
 
-/* Hero section */
+/* Hero section home page*/
 #hero {
     height: 600px;
     width: 100%;
-    background: url("../images/tree.jpg") no-repeat center center/cover;
+    background: url("../images/anxietybuddy1.jpg") no-repeat center center/cover;
     position: relative;
 }
 
