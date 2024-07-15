@@ -108,11 +108,6 @@
         position: relative;
 }
 
-/* animates effect on loading page */
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-
 /* Creates the level of zoom for the hero image*/
     @keyframes hero-zoom {
         from { transform: scale(1);
