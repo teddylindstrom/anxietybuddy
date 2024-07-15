@@ -1,202 +1,126 @@
-/*Imported style Google Fonts*/
-body {  font-family: "Roboto", sans-serif;
-        font-weight: 100;
-        font-style: normal;
-}
-
-/*Asterisk wildcard selector to override default styles added by the browser*/
-* { padding: 0px;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-/* General styles */
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:#3a3a3a;
-}
-
-h1, h2, h3 {
+    margin: 0;
     font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
 }
 
-/* Header */
 header {
-    background-color: green;
-    padding: 10px;
-    position:fixed;
-    z-index: 99;
-    width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-header a{
+
+#logo {
+    font-size: 1.5rem;
+    color: #333;
     text-decoration: none;
-    color: inherit;
+}
+
+nav {
+    display: flex;
+    align-items: center;
 }
 
 #menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-    list-style-type: none;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-#menu > li {
-    margin-bottom: 1em;
+#menu li {
+    margin-left: 1rem;
 }
 
-.active {
-    border-bottom: 1px solid #3a3a3a;
+#menu a {
+    text-decoration: none;
+    color: #333;
 }
 
-/* Navbar styles with dropdown toggle */
-nav {
-    position: absolute;
-    background-color:rgb(243, 238, 237);
-    width: 100%;
-    left: 0;
-    padding: 0 1rem;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: none;
-    top: 100%;
+#menu a.active {
+    font-weight: bold;
 }
 
-/* Nav toggle */
-#nav-toggle:checked~nav {
-    display: block;
-}
-#nav-toggle:checked~nav{
+.nav-toggle {
     display: none;
 }
 
 .nav-toggle-label {
-    font-size: 2rem;
+    display: none;
 }
 
-/* Main content*/
-main {
-    
-    /*make main element take up any surplus space to push footer down*/
-    box-sizing: border-box;
-    flex: 1 0 auto;
-    margin-top: 47px;
-}
-
-
-/* Hero image */
-
-#hero-outer {
-    height: 600px;
-    width: 100%;
-    overflow: hidden;
-}
-
-#hero-image {
-    height: 600px;
-    width: 100%;
-    background: url("../images/anxietybuddy1.jpg") no-repeat center center/cover;
-    position: relative;
-}
-
-/* animates effect on loading page */
-animation-name: hero-zoom;
-animation-duration: 5s;
-animation-fill-mode: forwards;
-
-/* Creates the level of zoom for the hero image*/
-@keyframes hero-zoom {
-    from { transform: scale(1);
-
-    }
-    to { transform: scale(1.1);
-
-    }
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background: url('../images/hero.jpg') no-repeat center center/cover;
 }
 
 #cover-text {
-    /* Final rgba value sets the opacity so it is semi-transparent */
-    background-color: rgba(243, 238, 237, .7);
-    font-size: 130%;
-    position: absolute;
-    bottom: 30px;
-    width: 80%;
-    min-height: 200px;
-    padding-top: 40px;
-    padding-left: 10px;
-}
-
-#cover-text > h2, #cover-text > h3 {
-    color: #252525;
-}
-
-
-/* Footer */
-#social-networks{
     text-align: center;
-    padding: 20px 0;
-    display:flex;
-    justify-content: space-evenly;
-    list-style-type: none;
+    color: white;
 }
 
-#social-networks i {
-    font-size: 160%;
-    padding: 5%;
-    color: #3a3a3a;
+#cover-text h2 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
 }
 
-/* media query: tablets and larger (768px and up)*/
-@media screen and (min-width: 768px) {
-    /* Header */
-    nav {
+#cover-text h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+#what, #exercises, #contact {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+#what h2, #exercises h2, #contact h2 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    text-align: center;
+}
+
+#social-networks {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#social-networks li {
+    margin: 0 0.5rem;
+}
+
+#social-networks a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle-label {
         display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
     }
 
     #menu {
-        display: flex;
-    }
-
-    #menu > li{
-        padding-left: 1rem;
-    }
-
-    .nav-toggle-label{
+        flex-direction: column;
         display: none;
     }
 
-    #logo{
-        font-size: 280%;
-        line-height: 75px;
-        margin: 0 0.5rem;
+    #menu li {
+        margin-left: 0;
     }
 
-    /* main content */
-    main{
-        /* Push main content down to accomodate larger header */
-        margin-top: 79px;
-    }
-    /* Hero */
-    #cover-text {
-        width: 300px;
-        right: 50px;
-    }
-}
-
-/* Large devices (Laptops and desktops, 992px and up) */
-@media screen and (min-width:992px) {
-    #menu a:hover{
-        border-bottom: 1px solid #3a3a3a;
+    .nav-toggle:checked + .nav-toggle-label + nav #menu {
+        display: flex;
     }
 }
