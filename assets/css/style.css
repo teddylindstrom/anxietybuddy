@@ -7,9 +7,9 @@
 
 /*Asterisk wildcard selector to override default styles added by the browser*/
 * { 
-    padding: 0px;
-    margin: 0;
-    
+        padding: 0px;
+        margin: 0;
+
 }
 
 /* General styles */
@@ -93,12 +93,18 @@
 }
 
 
-/* Hero image */
+/* Hero area and cover text*/
+
+    #cover-text, #cover-text h2, #cover-text h3 {
+        color: #252525;
+    }
 
     #hero-outer {
         height: 600px;
         width: 100%;
         overflow: hidden;
+
+        position: relative;
 }
 
     #hero-image {
@@ -118,14 +124,25 @@
 
 /* Final rgba value sets the opacity so it is semi-transparent */
     #cover-text {
-        background-color: rgba(243, 238, 237, .7);
         font-size: 130%;
-        position: absolute;
-        bottom: 30px;
-        width: 80%;
-        min-height: 200px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+
+        width: 300px;
+        height: 200px;
+
         padding-top: 40px;
         padding-left: 10px;
+
+        background-color: rgba(243, 238, 237, .7);
+        
+        bottom: 30px;
+        right: 150px;
+
+        position: absolute;
+       
+        
 }
 
     #cover-text > h2, #cover-text > h3 {
@@ -135,21 +152,21 @@
 
 /* Footer */
     #social-networks{
-    text-align: center;
-    padding: 20px 0;
-    display:flex;
-    justify-content: space-evenly;
-    list-style-type: none;
+        text-align: center;
+        padding: 20px 0;
+        display:flex;
+        justify-content: space-evenly;
 }
 
     #social-networks i {
-    font-size: 160%;
-    padding: 5%;
-    color: #3a3a3a;
+        font-size: 160%;
+        padding: 5%;
+        color: #3a3a3a;
 }
 
 /* media query: tablets and larger (768px and up)*/
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) 
+{
     
 /* Header */
     nav {
@@ -185,9 +202,9 @@
         margin-top: 79px;
 }
 /* Hero */
-    #cover-text {
-        width: 300px;
-        right: 50px;
+#cover-text {
+    width: 300px;
+    right: 50px;
 }
 }
 
