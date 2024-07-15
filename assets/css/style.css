@@ -90,12 +90,35 @@ main {
     margin-top: 47px;
 }
 
-/* Hero section home page*/
-#hero {
+
+/* Hero image */
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#hero-image {
     height: 600px;
     width: 100%;
     background: url("../images/anxietybuddy1.jpg") no-repeat center center/cover;
     position: relative;
+}
+
+/* animates effect on loading page */
+animation-name: hero-zoom;
+animation-duration: 5s;
+animation-fill-mode: forwards;
+
+/* Creates the level of zoom for the hero image*/
+@keyframes hero-zoom {
+    from { transform: scale(1);
+
+    }
+    to { transform: scale(1.1);
+
+    }
 }
 
 #cover-text {
@@ -113,6 +136,7 @@ main {
 #cover-text > h2, #cover-text > h3 {
     color: #252525;
 }
+
 
 /* Footer */
 #social-networks{
